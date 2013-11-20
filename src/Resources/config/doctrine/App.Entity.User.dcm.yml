@@ -1,0 +1,22 @@
+App\Entity\User:
+  type: entity        
+#  repositoryClass: Gallery\BackendBundle\Repository\UserRepository
+  table: user
+  fields:
+    id:
+      type: integer
+      id: true
+      nullable: false
+      unsigned: true      
+      column: id_user
+      generator:
+        strategy: IDENTITY
+    username:
+      type: string
+      length: 255
+      nullable: false
+      column: name
+    isAdmin:
+      type: boolean
+      nullable: false
+      column: admin
