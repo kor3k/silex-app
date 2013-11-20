@@ -7,9 +7,9 @@
 1. download silex
 
   - dle instrukcí na [silex webu](http://silex.sensiolabs.org/download)
-  - nebo z [kor3k/silex-app](https://bitbucket.org/kor3k/silex-app)
+  - nebo z [kor3k/silex-app](https://github.com/kor3k/silex-app)
 
-            git clone https://bitbucket.org/kor3k/silex-app.git
+            git clone https://github.com/kor3k/silex-app.git
 
 2. download composer
 
