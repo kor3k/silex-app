@@ -9,6 +9,7 @@
   - dle instrukcí na [silex webu](http://silex.sensiolabs.org/download)
   - nebo z [kor3k/silex-app](https://github.com/kor3k/silex-app)
 
+            cd c:/wamp/www
             git clone https://github.com/kor3k/silex-app.git
 
 2. download composer
@@ -25,8 +26,9 @@
 ## Update
 1. update dependencies
 
-        php composer.phar self-update && php composer.phar update --optimize-autoloader
-
+        cd silex-app
+        php ../composer.phar self-update && php ../composer.phar update --optimize-autoloader
+  
 -----------
 
 ## Hints
