@@ -20,6 +20,8 @@
 
 4. vytvořit složky `/cache` a `/logs`
 
+5. [http://localhost/silex-app/web/index](http://localhost/silex-app/web/index)
+
 -----------
 
 <a name="update"></a>
