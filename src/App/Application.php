@@ -20,12 +20,6 @@ class Application extends \Core\Application
         $this->initBasicHttpSecurity( '^/admin' , [ 'admin' => [ 'ROLE_ADMIN' , $this['admin_password'] ] ] );
         $this->initHttpCache( $this['cache_ttl'] );
 
-        $this->after(
-        function( Request $request, Response $response )
-        {
-            $this->prepareResponse( $response );
-        });
-
         $this->before(
         function( Request $request )
         {
