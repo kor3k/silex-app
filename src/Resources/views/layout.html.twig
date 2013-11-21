@@ -2,9 +2,9 @@
 
 {% block body %}
 
-<div class="container_12 clearfix" id="page_container" style="background: blue;">
+<div class="container_12 clearfix" id="page_container">
 
-    <header id="page_header" class="grid_12" style="background: violet;">
+    <header id="page_header" class="grid_12">
         {% block header %}
         <section class="grid_4 alpha">
             silex
@@ -21,7 +21,9 @@
     </header>
 
     <nav id="page_navigation" class="grid_3">
-        {% block navigation 'navigation' %}
+        {% block navigation %}
+            {% include 'navigation.html.twig' %}
+        {% endblock navigation %}
     </nav>
 
     <article id="page_content" class="grid_9">
@@ -29,7 +31,9 @@
     </article>
     
     <footer id="page_footer" class="grid_12">
-        {% block footer 'footer' %}
+        {% block footer %}
+            &copy; yo mama {{ 'now' | date( 'Y' ) }}
+        {% endblock footer %}
     </footer>
     
 </div>    
@@ -58,6 +62,13 @@
     <link rel="stylesheet" href="./css/master.css" />
     <noscript>
         <link rel="stylesheet" href="./css/mobile.css" />
+        <style>
+            #page_header section:nth-of-type(2)
+            {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        </style>
     </noscript>       
 {% endblock stylesheets %}    
     
@@ -76,7 +87,15 @@ onScreenResize = function( i , width )
     {% endif %}
     
     {% block onScreenResize %}
-          
+
+        if( 0 == i )
+        {
+            $( '#page_header section:nth-of-type(2)' ).addClass( 'alpha omega' );
+        }
+        else
+        {
+            $( '#page_header section:nth-of-type(2)' ).removeClass( 'alpha omega' );
+        }
 
     {% endblock onScreenResize %}       
 }
