@@ -1,6 +1,7 @@
 <?php
 
 define( 'DIR' , __DIR__.'/..' );
+define( 'WEB' ,'/silex-app/web' );
 
 require_once DIR.'/vendor/autoload.php';
 require_once DIR.'/vendor/kor3k/silex/src/Core/startup.php';
