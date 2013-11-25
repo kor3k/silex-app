@@ -10,21 +10,21 @@ require_once DIR.'/vendor/kor3k/silex/src/Core/startup.php';
 
 $config   =	array(
     
-    'mailer_user'	=>  'someuser@gmail.com',
+    'mailer_user'	    =>  'someuser@gmail.com',
     'mailer_password'	=>  'pa$$word' ,
     'mailer_recipient'	=>  'otheruser@gmail.com' ,
     
-    'database_host'	=>  'localhost',
-    'database_name'	=>  'somedb',
-    'database_user'	=>  'root',
+    'database_host'	    =>  'localhost',
+    'database_name'	    =>  'somedb',
+    'database_user'	    =>  'root',
     'database_password'	=>  '',  
     
     'admin_password'	=>  'vstup' ,
     
-    'cache_ttl'		=>  3600 ,
-    'response_ttl'	=>  3600 ,    
-    'locale'		=>  'cs' ,
-    'debug'		=>  true ,        
+    'cache_ttl'		    =>  3600 ,
+    'response_ttl'	    =>  3600 ,
+    'locale'		    =>  'cs' ,
+    'debug'		        =>  true ,
         
 );
 

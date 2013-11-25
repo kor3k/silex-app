@@ -55,13 +55,13 @@
 {% endblock head %}
 
 {% block javascripts %}
-    <script src="{{ constant( 'WEB' ) }}/js/jquery.js"></script>
+    <script src="{{ constant( 'WEB' ) | default( '.' ) }}/js/jquery.js"></script>
 {% endblock javascripts %}
     
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ constant( 'WEB' ) }}/css/master.css" />
+    <link rel="stylesheet" href="{{ constant( 'WEB' ) | default( '.' ) }}/css/master.css" />
     <noscript>
-        <link rel="stylesheet" href="{{ constant( 'WEB' ) }}/css/mobile.css" />
+        <link rel="stylesheet" href="{{ constant( 'WEB' ) | default( '.' ) }}/css/mobile.css" />
         <style>
             #page_header section:nth-of-type(2)
             {
@@ -73,7 +73,7 @@
 {% endblock stylesheets %}    
     
 {% block adapt %}
-    <script src="{{ constant( 'WEB' ) }}/js/adapt.js"></script>
+    <script src="{{ constant( 'WEB' ) | default( '.' ) }}/js/adapt.js"></script>
 {% endblock adapt %}      
 
 {% block adapt_config %}
@@ -104,7 +104,7 @@ onScreenResize = function( i , width )
 var ADAPT_CONFIG = {
 // Where is your CSS?
 //path: 'assets/css/',
-path: '{{ constant( 'WEB' ) }}/css/' ,
+path: '{{ constant( 'WEB' ) | default( '.' ) }}/css/' ,
 
 // false = Only run once, when page first loads.
 // true = Change on window resize and page tilt.
