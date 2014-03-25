@@ -1,17 +1,17 @@
 <?php
 
-namespace App;
+namespace App\Controller;
 
 class FrontendController extends \Core\AbstractController
 {
     public function notFoundAction()
     {	
-	    return $this->app->render( '404.html.twig' , [] )->setStatusCode( 404 );
+	    return $this->app->render( '/error/404.html.twig' , [] )->setStatusCode( 404 );
     }     
     
     public function errorAction()
     {	
-	    return $this->app->render( 'error.html.twig' , [] )->setStatusCode( 500 );
+	    return $this->app->render( '/error/error.html.twig' , [] )->setStatusCode( 500 );
     }      
     
     public function indexAction()

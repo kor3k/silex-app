@@ -31,10 +31,10 @@ $config   =	array(
 $app		=   new \App\Application( $config );
 $app->boot();
 
-$frontend	=   new \App\FrontendController( $app );
+$frontend	=   new \App\Controller\FrontendController( $app );
 $app->mount( '/' , $frontend() );
 
-$backend	=   new \App\BackendController( $app );
+$backend	=   new \App\Controller\BackendController( $app );
 $app->mount( '/admin' , $backend() );
 
 $app->run();
