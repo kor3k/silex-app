@@ -67,7 +67,7 @@
 
 
 
-table
+table.striped
 {
     font-family: Helvetica;
     font-size: 85%;
@@ -78,26 +78,26 @@ table
     color: #817f70;
 }
 
-table thead tr
+table.striped thead tr
 {
     background: #F2F2E4;
 }
 
-table thead tr th
+table.striped thead tr th
 {
     border-bottom: 1px solid black;
 }
 
-table tr:nth-child(even) td
+table.striped tr:nth-child(even) td
 {
     background: white;
 }
-table tr:nth-child(odd) td
+table.striped tr:nth-child(odd) td
 {
     background: #f0f0ff
 }
 
-table tr:hover td
+table.striped tr:hover td
 {
     background: #F2F2E4;
 }
